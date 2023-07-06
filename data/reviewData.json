@@ -1,0 +1,26 @@
+{
+  "imports": ["const Tour = require('./tourModel');"],
+  "name": "review",
+  "Name": "Review",
+  "model": "review",
+  "fields": [
+    {
+      "name": "review",
+      "type": "String",
+      "required": {
+        "value": "Review can not be empty"
+      }
+    },
+    {
+      "name": "rating",
+      "type": "Number",
+      "min": { "value": 1 },
+      "max": { "value": 5 }
+    },
+    {
+      "name": "CreatedAt",
+      "type": "Date",
+      "default": { "value": "Date.now" }
+    }
+  ]
+}

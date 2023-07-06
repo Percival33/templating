@@ -4,15 +4,20 @@
   "description": "",
   "main": "render.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node render.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Percival33/templating.git"
   },
   "author": "Marcin Jarczewski",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0",
+    "mock-fs": "^5.2.0"
   }
 }

@@ -1,0 +1,39 @@
+{
+  "imports": [],
+  "name": "booking",
+  "Name": "Booking",
+  "model": "booking",
+  "fields": [
+    {
+      "name": "tour",
+      "type": "mongoose.Schema.ObjectId",
+      "required": {
+        "value": "Booking must belong to a Tour!"
+      }
+    },
+    {
+      "name": "user",
+      "type": "mongoose.Schema.ObjectId",
+      "required": {
+        "value": "Booking must belong to a User!"
+      }
+    },
+    {
+      "name": "price",
+      "type": "Number",
+      "required": {
+        "value": "Booking must have a price"
+      }
+    },
+    {
+      "name": "createdAt",
+      "type": "Date",
+      "default": { "value": "Date.now()" }
+    },
+    {
+      "name": "paid",
+      "type": "Boolean",
+      "default": { "value": "true" }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+const mongoose = require('mongoose');
+{{{imports}}}
+
+const {{name}}Schema = new mongoose.Schema(
+  {
+    {{#fields}}
+    {{name}}: { 
+        type: {{type}}, {{#ref}}
+        ref: {{value}}, {{/ref}} {{#min}}
+        min: {{value}}, {{/min}} {{#max}}
+        max: {{value}}, {{/max}} {{#required}}
+        required: [true, '{{value}}'], {{/required}} {{#default}}
+        default: {{value}} {{/default}}
+    }, 
+    {{/fields}}
+  }
+);
+const {{Name}} = mongoose.model('{{Name}}', {{name}}Schema);
+module.exports = {{Name}};
+{{! {
+  toJSON: { virtuals: true },
+  toObject: { virtuals: true },
+} }}
