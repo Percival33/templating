@@ -39,6 +39,6 @@ npm start render {name_of_your_data.json_file}
 
 Replace `{name_of_your_data.json_file}` with the name of your JSON file (without the `.json` extension).
 
-4. That's it! Your rendered template will be output as a new JavaScript file.
+4. That's it! Your rendered template will be output as a new JavaScript file in `output` directory
 
 Feel free to clone this repository and experiment with your own data and templates!
