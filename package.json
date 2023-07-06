@@ -5,7 +5,8 @@
   "main": "render.js",
   "scripts": {
     "start": "node render.js",
-    "test": "jest"
+    "test": "jest",
+    "docs": "node generate-changelog.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
     "mustache": "^4.2.0"
   },
   "devDependencies": {
+    "generate-changelog": "^1.8.0",
     "jest": "^29.6.0",
     "mock-fs": "^5.2.0"
   }
