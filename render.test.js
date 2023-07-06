@@ -5,7 +5,7 @@ const render = require("./render");
 const mockTemplate = fs.readFileSync("template.mustache");
 
 jest.mock("fs");
-jest.mock("Mustache");
+jest.mock("mustache");
 
 describe("render.js tests", () => {
   it("should correctly render template", () => {
